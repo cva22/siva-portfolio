@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div>
-      <p className='text-lg font-medium'>
+    <div className='text-lg font-medium text-justify'>
+      <p>
         I&apos;m a seasoned DevOps developer with a 13+ years of track record in
         application/product development across diverse platforms. My expertise
         extends to cloud-based infrastructures on AWS and Azure. What
@@ -11,7 +11,7 @@ export default function About() {
         interactions.
       </p>
       <br />
-      <p className='text-lg font-medium'>
+      <p>
         I excel in stakeholder management, skillfully aligning projects with
         organizational objectives. My career traverses both enterprise and
         startup landscapes, providing me with a distinctive perspective on
