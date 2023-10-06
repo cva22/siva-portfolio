@@ -21,7 +21,7 @@ export default function Accordian() {
               <Box as='span' flex='1' textAlign='left'>
                 Officeworks
               </Box>
-              <Box as='span' flex='1' textAlign='right'>
+              <Box as='span' flex='2' textAlign='right'>
                 May 2021 ~ Nov 2023
               </Box>
               <AccordionIcon />
@@ -67,7 +67,7 @@ export default function Accordian() {
               <Box as='span' flex='1' textAlign='left'>
                 NBN
               </Box>
-              <Box as='span' flex='1' textAlign='right'>
+              <Box as='span' flex='2' textAlign='right'>
                 Oct 2019 ~ May 2021
               </Box>
               <AccordionIcon />
@@ -101,7 +101,7 @@ export default function Accordian() {
               <Box as='span' flex='1' textAlign='left'>
                 Object Consulting
               </Box>
-              <Box as='span' flex='1' textAlign='right'>
+              <Box as='span' flex='2' textAlign='right'>
                 May 2017 ~ Sept 2019
               </Box>
               <AccordionIcon />
@@ -143,7 +143,7 @@ export default function Accordian() {
               <Box as='span' flex='1' textAlign='left'>
                 Vix Technology
               </Box>
-              <Box as='span' flex='1' textAlign='right'>
+              <Box as='span' flex='2' textAlign='right'>
                 Sept 2016 ~ Apr 2017
               </Box>
               <AccordionIcon />
@@ -164,7 +164,7 @@ export default function Accordian() {
               <Box as='span' flex='1' textAlign='left'>
                 Cognizant
               </Box>
-              <Box as='span' flex='1' textAlign='right'>
+              <Box as='span' flex='2' textAlign='right'>
                 Mar 2014 ~ May 2016
               </Box>
               <AccordionIcon />
@@ -192,7 +192,7 @@ export default function Accordian() {
               <Box as='span' flex='1' textAlign='left'>
                 Dell Technologies
               </Box>
-              <Box as='span' flex='1' textAlign='right'>
+              <Box as='span' flex='2' textAlign='right'>
                 Mar 2010 ~ Feb 2014
               </Box>
               <AccordionIcon />
