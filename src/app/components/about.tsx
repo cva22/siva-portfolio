@@ -2,9 +2,9 @@ export default function About() {
   return (
     <div>
       <div>
-        <h2 className='text-3xl text-lime-500'>ABOUT ME</h2>
+        <h2 className='text-3xl text-lime-500 py-3'>ABOUT ME</h2>
       </div>
-      <div className='text-lg font-medium text-justify'>
+      <div className='text-justify'>
         <p>
           I&apos;m a seasoned DevOps developer with a 13+ years of track record
           in application/product development across diverse platforms. My

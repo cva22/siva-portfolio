@@ -9,9 +9,9 @@ import {
 
 export default function Accordian() {
   return (
-    <div>
+    <div className='basis-36'>
       <div>
-        <h2 className='text-3xl text-lime-500'>MY WORK</h2>
+        <h2 className='text-3xl text-lime-500 py-3'>MY WORK</h2>
       </div>
 
       <Accordion allowToggle defaultIndex={[0]}>

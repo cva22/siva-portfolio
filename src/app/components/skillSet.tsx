@@ -2,10 +2,10 @@ export default function SkillSet() {
   return (
     <div>
       <div>
-        <h2 className='text-3xl text-lime-500'>SKILL SNAPSHOT</h2>
+        <h2 className='text-3xl text-lime-500 py-3'>SKILL SNAPSHOT</h2>
       </div>
       <div>
-        <ul className='list-disc list-inside'>
+        <ul className='list-disc list-outside ml-12'>
           <li>
             Web: Node, HTML5, CSS3, CSS-in-JS, ECMAScript (&gt;ES6), TypeScript
           </li>
@@ -14,9 +14,9 @@ export default function SkillSet() {
             Webpack, WebGL, Nestjs, Nextjs, JS modules (CJS, ESM), Storybook
           </li>
           <li>Designing UI & UX: Adobe Photoshop, Figma, Sketch</li>
-          <ul className='list-disc list-inside'>
+          <ul className='list-disc list-outside'>
             <li>Workflow: Docker based Development and DevOps oriented</li>
-            <ul className='list-disc list-inside ml-8'>
+            <ul className='list-disc list-outside ml-8'>
               <li>
                 Code: Docker integrated VS Code, Git, Bitbucket, Code review,
                 Release management
