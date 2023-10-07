@@ -1,3 +1,6 @@
+'use client';
+
+import { useState, useEffect, SetStateAction } from 'react';
 import {
   Accordion,
   AccordionItem,
@@ -8,16 +11,36 @@ import {
 } from '@chakra-ui/react';
 
 export default function Accordian() {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  useEffect(() => {
+    if (activeIndex !== null) {
+      const accordionItem = document.querySelector(
+        `#accordion-button-accordion-item-${activeIndex}`
+      );
+      if (accordionItem) {
+        accordionItem.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [activeIndex]);
+
+  const handleAccordionClick = (index: any) => {
+    setActiveIndex(index === activeIndex ? null : index);
+  };
+
   return (
     <div className='basis-36 text-justify'>
       <div>
         <h2 className='text-3xl text-lime-500 py-3'>MY WORK</h2>
       </div>
-
+      {/* defaultIndex={[0]} */}
       <Accordion allowToggle defaultIndex={[0]}>
-        <AccordionItem>
+        <AccordionItem id='accordion-item-0'>
           <h2>
-            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
+            <AccordionButton
+              _expanded={{ bg: 'blueviolet', color: 'white' }}
+              onClick={() => handleAccordionClick(0)}
+            >
               <Box as='span' flex='1' textAlign='left'>
                 Officeworks
               </Box>
@@ -30,17 +53,16 @@ export default function Accordian() {
               May 2021 ~ Nov 2023
             </Box>
             <div className='py-1'>
-              Initiative:{' '}
-              <b className='text-orange-500'>NPS – On My Way On My Way</b>
+              Initiative: <b className='text-orange-500'>NPS – On My Way</b>
             </div>
-            initiative aims to streamline and enhance the customer and store
-            operator experience for click and collect orders. It has led to a
-            remarkable 8% increase in the Net Promoter Score (NPS), highlighting
-            its positive impact on customer satisfaction and loyalty. This
-            initiative demonstrates Officeworks&apos; commitment to innovation
-            and excellent customer service, showcasing the company&apos;s
-            dedication to providing a smoother and more convenient shopping
-            experience.
+            On My Way initiative aims to streamline and enhance the customer and
+            store operator experience for click and collect orders. It has led
+            to a remarkable 8% increase in the Net Promoter Score (NPS),
+            highlighting its positive impact on customer satisfaction and
+            loyalty. This initiative demonstrates Officeworks&apos; commitment
+            to innovation and excellent customer service, showcasing the
+            company&apos;s dedication to providing a smoother and more
+            convenient shopping experience.
           </AccordionPanel>
           <AccordionPanel pb={4}>
             <div className='py-1'>
@@ -75,9 +97,12 @@ export default function Accordian() {
           </AccordionPanel>
         </AccordionItem>
 
-        <AccordionItem>
+        <AccordionItem id='accordion-item-1'>
           <h2>
-            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
+            <AccordionButton
+              _expanded={{ bg: 'blueviolet', color: 'white' }}
+              onClick={() => handleAccordionClick(1)}
+            >
               <Box as='span' flex='1' textAlign='left'>
                 NBN
               </Box>
@@ -139,9 +164,12 @@ export default function Accordian() {
           </AccordionPanel>
         </AccordionItem>
 
-        <AccordionItem>
+        <AccordionItem id='accordion-item-2'>
           <h2>
-            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
+            <AccordionButton
+              _expanded={{ bg: 'blueviolet', color: 'white' }}
+              onClick={() => handleAccordionClick(2)}
+            >
               <Box as='span' flex='1' textAlign='left'>
                 Object Consulting
               </Box>
@@ -195,9 +223,12 @@ export default function Accordian() {
           </AccordionPanel>
         </AccordionItem>
 
-        <AccordionItem>
+        <AccordionItem id='accordion-item-3'>
           <h2>
-            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
+            <AccordionButton
+              _expanded={{ bg: 'blueviolet', color: 'white' }}
+              onClick={() => handleAccordionClick(3)}
+            >
               <Box as='span' flex='1' textAlign='left'>
                 Vix Technology
               </Box>
@@ -219,9 +250,12 @@ export default function Accordian() {
           </AccordionPanel>
         </AccordionItem>
 
-        <AccordionItem>
+        <AccordionItem id='accordion-item-4'>
           <h2>
-            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
+            <AccordionButton
+              _expanded={{ bg: 'blueviolet', color: 'white' }}
+              onClick={() => handleAccordionClick(4)}
+            >
               <Box as='span' flex='1' textAlign='left'>
                 Cognizant
               </Box>
@@ -254,9 +288,12 @@ export default function Accordian() {
           </AccordionPanel>
         </AccordionItem>
 
-        <AccordionItem>
+        <AccordionItem id='accordion-item-5'>
           <h2>
-            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
+            <AccordionButton
+              _expanded={{ bg: 'blueviolet', color: 'white' }}
+              onClick={() => handleAccordionClick(5)}
+            >
               <Box as='span' flex='1' textAlign='left'>
                 Dell Technologies
               </Box>
