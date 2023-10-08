@@ -19,7 +19,8 @@ export default function SkillSet() {
         <ListItem>
           <ListIcon as={MdDoneAll} color='orange.500' />
           Abstract: Micro Frontends, Microservices, React, Redux, Hooks,
-          Webpack, WebGL, Nestjs, Nextjs, JS modules (CJS, ESM), Storybook
+          Webpack, WebGL, Nestjs, Nextjs, JS modules (CJS, ESM), Bootstrap,
+          Storybook
         </ListItem>
         <ListItem>
           <ListIcon as={MdDoneAll} color='orange.500' />
