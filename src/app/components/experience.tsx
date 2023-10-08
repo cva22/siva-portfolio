@@ -11,36 +11,27 @@ import {
 } from '@chakra-ui/react';
 
 export default function Accordian() {
-  const [activeIndex, setActiveIndex] = useState(null);
-
-  useEffect(() => {
-    if (activeIndex !== null) {
-      const accordionItem = document.querySelector(
-        `#accordion-button-accordion-item-${activeIndex}`
-      );
-      if (accordionItem) {
-        accordionItem.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [activeIndex]);
-
-  const handleAccordionClick = (index: any) => {
-    setActiveIndex(index === activeIndex ? null : index);
-  };
-
   return (
     <div className='basis-36 text-justify'>
       <div>
         <h2 className='text-3xl text-lime-500 py-3'>MY WORK</h2>
       </div>
-      {/* defaultIndex={[0]} */}
-      <Accordion allowToggle defaultIndex={[0]}>
+      <Accordion
+        allowToggle
+        defaultIndex={[0]}
+        onChange={(expandedIndex) => {
+          const accordionItem = document.querySelector(
+            `#accordion-button-accordion-item-${expandedIndex}`
+          );
+          setTimeout(() => {
+            accordionItem?.scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+        }}
+        reduceMotion
+      >
         <AccordionItem id='accordion-item-0'>
           <h2>
-            <AccordionButton
-              _expanded={{ bg: 'blueviolet', color: 'white' }}
-              onClick={() => handleAccordionClick(0)}
-            >
+            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
               <Box as='span' flex='1' textAlign='left'>
                 Officeworks
               </Box>
@@ -99,10 +90,7 @@ export default function Accordian() {
 
         <AccordionItem id='accordion-item-1'>
           <h2>
-            <AccordionButton
-              _expanded={{ bg: 'blueviolet', color: 'white' }}
-              onClick={() => handleAccordionClick(1)}
-            >
+            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
               <Box as='span' flex='1' textAlign='left'>
                 NBN
               </Box>
@@ -166,10 +154,7 @@ export default function Accordian() {
 
         <AccordionItem id='accordion-item-2'>
           <h2>
-            <AccordionButton
-              _expanded={{ bg: 'blueviolet', color: 'white' }}
-              onClick={() => handleAccordionClick(2)}
-            >
+            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
               <Box as='span' flex='1' textAlign='left'>
                 Object Consulting
               </Box>
@@ -225,10 +210,7 @@ export default function Accordian() {
 
         <AccordionItem id='accordion-item-3'>
           <h2>
-            <AccordionButton
-              _expanded={{ bg: 'blueviolet', color: 'white' }}
-              onClick={() => handleAccordionClick(3)}
-            >
+            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
               <Box as='span' flex='1' textAlign='left'>
                 Vix Technology
               </Box>
@@ -252,10 +234,7 @@ export default function Accordian() {
 
         <AccordionItem id='accordion-item-4'>
           <h2>
-            <AccordionButton
-              _expanded={{ bg: 'blueviolet', color: 'white' }}
-              onClick={() => handleAccordionClick(4)}
-            >
+            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
               <Box as='span' flex='1' textAlign='left'>
                 Cognizant
               </Box>
@@ -290,10 +269,7 @@ export default function Accordian() {
 
         <AccordionItem id='accordion-item-5'>
           <h2>
-            <AccordionButton
-              _expanded={{ bg: 'blueviolet', color: 'white' }}
-              onClick={() => handleAccordionClick(5)}
-            >
+            <AccordionButton _expanded={{ bg: 'blueviolet', color: 'white' }}>
               <Box as='span' flex='1' textAlign='left'>
                 Dell Technologies
               </Box>
