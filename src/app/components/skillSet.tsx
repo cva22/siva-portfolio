@@ -14,7 +14,8 @@ export default function SkillSet() {
       <List spacing={2}>
         <ListItem>
           <ListIcon as={MdDoneAll} color='orange.500' />
-          Web: Node, HTML5, CSS3, CSS-in-JS, ECMAScript (&gt;ES6), TypeScript
+          Web: Node, HTML5, CSS3, CSS-in-JS, ECMAScript (&gt;ES6), TypeScript,
+          JavaScript
         </ListItem>
         <ListItem>
           <ListIcon as={MdDoneAll} color='orange.500' />
@@ -55,7 +56,7 @@ export default function SkillSet() {
         <ListItem>
           <ListIcon as={MdDoneAll} color='orange.500' />
           Frameworks: Firebase, jQuery, Express, Google Analytics, MongoDB,
-          DynamoDb, Dynamoose, Graphql, OAuth
+          DynamoDb, PostgreSQL, Redis, Dynamoose, Graphql, OAuth
         </ListItem>
         <ListItem>
           <ListIcon as={MdDoneAll} color='orange.500' />
