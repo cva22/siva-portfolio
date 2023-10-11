@@ -1,7 +1,6 @@
 import Profile from './components/profile';
 import About from './components/about';
 import SkillSet from './components/skillSet';
-import WorkProfile from './components/workProfile';
 import HyperLinks from './components/hyperLinks';
 import Footer from './components/footer';
 import Accordian from './components/experience';
@@ -15,8 +14,6 @@ export default function Home() {
         <About />
 
         <SkillSet />
-
-        {/* <WorkProfile /> */}
 
         <Accordian />
 

@@ -2,6 +2,7 @@ export default function Profile() {
   return (
     <div>
       <div className='text-sm'>Hello, I&apos;m</div>
+
       <div className='text-6xl tracking-wider text-lime-500 hover:text-purple-500'>
         SIVA SELVARAJ
       </div>
