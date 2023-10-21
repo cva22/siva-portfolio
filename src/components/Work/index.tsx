@@ -46,10 +46,11 @@ export default function Work() {
     return (
         <div className='relative h-screen'>
             <div className='grid grid-cols-6 text-center'>
-                {skills.map((skill) => (
+                {skills.map((skill, index) => (
                     <div className='max-w-75 max-h-75'>
                         < Image
                             className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
+                            key={index}
                             src={skill.src}
                             alt={skill.alt}
                             width={120}
