@@ -12,7 +12,7 @@ export default function About() {
         </div>
         <div className='text-justify'>
           <p>
-            I'm a quantified - self, tech, design thinking and sustainable software developer
+            I&apos;m a quantified - self, tech, design thinking and sustainable software developer
             Passionate in building strategies & problem solving
             Build effiective frameworks based on the business needs
             Work efficiently both as an individual contributor as well as along with a team
