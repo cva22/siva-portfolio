@@ -1,11 +1,6 @@
 'use client';
-import { useRef } from 'react';
-import { motion } from 'framer-motion';
-import { Card, CardBody, CardHeader, Text, Button } from '@chakra-ui/react';
 import Image from 'next/image';
 
-import typescript from '../../assets/skills/javascript.svg'
-import javascript from '@/assets/skills/javascript.svg';
 
 export default function Work() {
     const skills = [
@@ -47,10 +42,9 @@ export default function Work() {
         <div className='relative h-screen'>
             <div className='grid grid-cols-6 text-center'>
                 {skills.map((skill, index) => (
-                    <div className='max-w-75 max-h-75'>
+                    <div key={index} className='max-w-75 max-h-75' >
                         < Image
                             className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
-                            key={index}
                             src={skill.src}
                             alt={skill.alt}
                             width={120}
