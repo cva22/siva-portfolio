@@ -8,9 +8,8 @@ import About from '@/components/About';
 import SkillSet from '@/components/SkillSet';
 // import Experience from '@/components/Experience';
 // import HyperLinks from '@/components/HyperLinks';
-// import Footer from '@/components/Footer';
+import Footer from '@/components/Footer';
 import ScrollContext from './contexts/ScrollContext';
-// import Work from '@/components/Work';
 
 
 export default function Home() {
@@ -35,7 +34,7 @@ export default function Home() {
             {/* <Experience /> */}
             {/* <HyperLinks /> */}
             {/* <Work /> */}
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </section>
       </ScrollContext.Provider>

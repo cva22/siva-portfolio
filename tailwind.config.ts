@@ -10,6 +10,7 @@ const config = {
       },
       colors: {
         primary: '#34914f',
+        secondary: '#bf55ec', 
         neutrals: {
           900: '#060918',
           800: '#161A2C',

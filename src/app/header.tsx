@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import { useState } from 'react';
 import useScrollThreshold from '@/hooks/use-scroll-threshold';
 import MobileNavigation from './mobile-navigation';
@@ -33,8 +35,7 @@ function Header() {
         <>
             <div >
                 <header
-                    aria-label="Primary"
-                    className="fixed top-0 z-40 w-full">
+                    className='fixed top-0 z-40 w-full'>
                     <Container>
                         <div className='2xl:w-4/5 max-w-7xl mx-auto w-11/12'>
                             <div
@@ -50,7 +51,7 @@ function Header() {
                                     </div>
                                     <nav
                                         aria-label="Primary"
-                                        className="ml-4 hidden items-center gap-x-6 lg:flex"
+                                        className='ml-4 hidden items-center gap-x-6 lg:flex'
                                     >
                                         {links.map((link) => (
                                             <a
@@ -71,18 +72,23 @@ function Header() {
                                             </a>
                                         ))}
                                     </nav>
-                                    <div className="flex items-center justify-center">
+                                    <div className='flex items-center justify-center'>
                                         <a
                                             href="/"
                                             title="Navigate home"
                                         >
-                                            Siva
+                                            <Image
+                                                src='/s.png'
+                                                alt='ITH Logo'
+                                                width={80}
+                                                height={80}
+                                            />
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </Container>
+                    </Container >
                     <MobileNavigation
                         isOpen={isMobileMenuOpen}
                         onClose={() => setIsMobileMenuOpen(false)}
@@ -92,8 +98,8 @@ function Header() {
                         isOpen={isMobileMenuOpen}
                         onClose={() => setIsMobileMenuOpen(false)}
                     />
-                </header>
-            </div>
+                </header >
+            </div >
         </>
     )
 }

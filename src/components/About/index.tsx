@@ -21,16 +21,22 @@ export default function About() {
       <div>
         <StarsBackground />
         <div className="w-full py-28 max-lg:mx-auto max-lg:w-11/12 max-lg:max-w-7xl lg:pl-10 xl:pl-20">
-          <Caption id='adout-caption'>About</Caption>
+          <Caption className='border-primary/30 bg-primary/10 text-primary after:bg-primary/10' id='adout-caption'>About</Caption>
           <TypingHeading
             headings={headings}
           />
           <Paragraph className='text-lg'>
-            I&apos;m a quantified - self, tech, design thinking and sustainable software developer
-            Passionate in building strategies & problem solving
-            Build effiective frameworks based on the business needs
-            Work efficiently both as an individual contributor as well as along with a team
-            Love trying new things, creating new methods and introducing new ideas - Even it has flaws - do learn from it
+            I&apos;m a software developer specialized in quantified-self, tech innovation, and sustainable design.
+            <br />
+            I build tailored frameworks to meet business needs and thrive both solo and in teams.
+            <br />
+            Always eager to innovate and learn from every experience.
+            <br />
+            <br />
+            I excel in stakeholder management, skillfully aligning projects with organizational objectives. My career traverses
+            both enterprise and startup landscapes, providing me with a distinctive perspective on fostering innovation. I
+            embrace challenges with curiosity and a positive outlook, consistently pursuing innovative solutions that deliver
+            concrete results.
           </Paragraph>
         </div>
       </div>
