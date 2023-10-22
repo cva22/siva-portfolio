@@ -80,8 +80,8 @@ function Header() {
                                             <Image
                                                 src='/favicon.ico'
                                                 alt='Siva'
-                                                width={80}
-                                                height={80}
+                                                width={40}
+                                                height={40}
                                             />
                                         </a>
                                     </div>
