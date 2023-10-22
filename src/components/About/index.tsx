@@ -18,16 +18,14 @@ export default function About() {
       id="about"
       className='relative z-10 w-full bg-neutrals-900 py-32 flex flex-col items-center justify-center min-h-screen'
     >
-      <div
-      // className="flex min-h-screen w-full items-center max-lg:flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,min(91.666667%/2,40rem))_minmax(0,min(91.666667%/2,40rem))_minmax(0,1fr)] xl:grid-cols-[minmax(0,1fr)_minmax(0,min(80%/2,40rem))_minmax(0,min(80%/2,40rem))_minmax(0,1fr)]"
-      >
+      <div>
         <StarsBackground />
         <div className="w-full py-28 max-lg:mx-auto max-lg:w-11/12 max-lg:max-w-7xl lg:pl-10 xl:pl-20">
           <Caption id='adout-caption'>About</Caption>
           <TypingHeading
             headings={headings}
           />
-          <Paragraph>
+          <Paragraph className='text-lg'>
             I&apos;m a quantified - self, tech, design thinking and sustainable software developer
             Passionate in building strategies & problem solving
             Build effiective frameworks based on the business needs
