@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import { Caption } from '../ui/typography';
 import MatrixBackground from '@/components/matrix-background';
+import abc from '../../assets/gitHub.svg'
 
 const skills = [
   { category: 'programming language & framework', name: 'typescript', alt: 'typescript', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
   { category: 'programming language & framework', name: 'javascript', alt: 'javascript', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
   { category: 'programming language & framework', name: 'nodejs', alt: 'nodejs', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg' },
-  { category: 'programming language & framework', name: 'expressjs', alt: 'expressjs', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+  { category: 'programming language & framework', name: 'expressjs', alt: 'expressjs', src: 'https://raw.githubusercontent.com/ithivesolutions/siva-portfolio/main/src/assets/skills/express.svg' },
   { category: 'database', name: 'postgress', alt: 'postgress', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg' },
   { category: 'infrastructure', name: 'firebase', alt: 'firebase', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg' },
   { category: 'tools', name: 'bitbucket', alt: 'bitbucket', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original-wordmark.svg' },
@@ -17,9 +18,9 @@ const skills = [
   { category: 'programming language & framework', name: 'dotnet', alt: 'dotnet', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg' },
   { category: 'design', name: 'figma', alt: 'figma', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
   { category: 'tools', name: 'git', alt: 'git', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg' },
-  { category: 'tools', name: 'github', alt: 'github', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg' },
+  { category: 'tools', name: 'github', alt: 'github', src: 'https://raw.githubusercontent.com/ithivesolutions/siva-portfolio/main/src/assets/skills/gitHub.svg' },
   { category: 'programming language & framework', name: 'graphql', alt: 'graphql', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain-wordmark.svg' },
-  { category: 'programming language & framework', name: 'handlebars', alt: 'handlebars', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/handlebars/handlebars-original-wordmark.svg' },
+  { category: 'programming language & framework', name: 'handlebars', alt: 'handlebars', src: 'https://raw.githubusercontent.com/ithivesolutions/siva-portfolio/main/src/assets/skills/handlebars.svg' },
   { category: 'programming language & framework', name: 'html', alt: 'html', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg' },
   { category: 'programming language & framework', name: 'jest', alt: 'jest', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg' },
   { category: 'tools', name: 'jenkins', alt: 'jenkins', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg' },
@@ -29,7 +30,7 @@ const skills = [
   { category: 'database', name: 'mongodb', alt: 'mongodb', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg' },
   { category: 'database', name: 'sql', alt: 'sql', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg' },
   { category: 'programming language & framework', name: 'nest', alt: 'nest', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg' },
-  { category: 'programming language & framework', name: 'next', alt: 'next', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg' },
+  { category: 'programming language & framework', name: 'next', alt: 'next', src: 'https://raw.githubusercontent.com/ithivesolutions/siva-portfolio/main/src/assets/skills/next.svg' },
   { category: 'tools', name: 'npm', alt: 'npm', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
   { category: 'programming language & framework', name: 'react', alt: 'react', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg' },
   { category: 'tools', name: 'redis', alt: 'redis', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-plain-wordmark.svg' },
@@ -69,9 +70,9 @@ export default function SkillSet() {
         <div className="w-full py-28 max-lg:mx-auto max-lg:w-11/12 max-lg:max-w-7xl lg:pl-10 xl:pl-20">
           <Caption className='border-primary/30 bg-primary/10 text-primary after:bg-primary/10' id='adout-caption'>Skills</Caption>
           {Object.entries(groupedSkills).map(([category, skills]) => (
-            <div key={category} className='pl-5'>
+            <div key={category} className='py-10'>
               <Caption className='border-neutrals-300/30 bg-neutrals-300/10 text-neutrals-300 after:bg-neutrals-300/10' id='category-caption'>{category}</Caption>
-              <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 text-center py-5'>
+              <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 text-center'>
                 {skills.map((skill, index) => (
                   <div key={index} className='max-w-75 max-h-75'>
                     < Image

@@ -11,7 +11,6 @@ import SkillSet from '@/components/SkillSet';
 import Footer from '@/components/Footer';
 import ScrollContext from './contexts/ScrollContext';
 
-
 export default function Home() {
 
   const targetRef = useRef(null);
