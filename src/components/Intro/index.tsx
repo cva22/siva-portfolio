@@ -10,7 +10,7 @@ const headings = [
   'Coffeeholic',
 ];
 
-export default function Profile() {
+export default function Intro() {
   return (
     <>
       <section

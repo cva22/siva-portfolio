@@ -7,7 +7,7 @@ import StarsBackground from '@/components/stars-background';
 import MatrixBackground from '@/components/matrix-background';
 
 import Header from '@/app/header';
-import Profile from '@/components/Profile';
+import Intro from '@/components/Intro';
 import About from '@/components/About';
 import SkillSet from '@/components/SkillSet';
 import Experience from '@/components/Experience';
@@ -27,8 +27,6 @@ export default function Home() {
   return (
     <>
       <ScrollContext.Provider value={targetRef}>
-        <StarsBackground /*client: visible*/ />
-
         <Header />
         <section className='min-h-screen flex text-slate-200 text-base font-medium'>
           {/* bg-gradient-to-br from-gray-900 to-cyan-700 */}
@@ -36,11 +34,11 @@ export default function Home() {
 
           <div className='flex flex-col items-center justify-between p-12 container mx-auto gap-6'>
             <div className='flex flex-col items-center justify-between p-12 container mx-auto grid gap-6'>
-              <Profile />
+              <Intro />
               <About />
               <SkillSet />
-              <Experience />
-              <HyperLinks />
+              {/* <Experience /> */}
+              {/* <HyperLinks /> */}
               {/* <Work /> */}
               {/* <Footer /> */}
             </div>

@@ -9,11 +9,11 @@ const links = [
         selector: '#skills',
         href: '/#skills',
     },
-    {
-        label: 'Work',
-        selector: '#work',
-        href: '/#work',
-    }
+    // {
+    //     label: 'Work',
+    //     selector: '#work',
+    //     href: '/#work',
+    // }
 ] as const;
 
 function Header() {
@@ -25,7 +25,7 @@ function Header() {
                     className="fixed top-0 z-40 w-full">
                     <div className='2xl:w-4/5 max-w-7xl mx-auto w-11/12'>
                         <div
-                            className='mx-4 mt-4 rounded-full border p-2 transition-colors duration-500 border-slate-500 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50 text-slate-200 text-base font-medium'
+                            className='mx-4 mt-4 rounded-full border p-2 transition-colors duration-500 border-neutrals-600 bg-neutrals-900/90 backdrop-blur-md supports-[backdrop-filter]:bg-neutrals-900/50 text-slate-200 text-base font-medium'
                         >
                             <div className='grid grid-cols-3'>
                                 <nav

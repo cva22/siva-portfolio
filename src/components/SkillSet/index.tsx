@@ -72,6 +72,9 @@
 // }
 
 import Image from 'next/image';
+import { Caption } from '../ui/typography';
+import StarsBackground from '@/components/stars-background';
+
 
 
 export default function SkillSet() {
@@ -115,10 +118,9 @@ export default function SkillSet() {
       id="skills"
       className='relative z-10 w-full bg-neutrals-900 py-32 flex flex-col justify-center min-h-screen'
     >
-      <div>
-        <h2 className='text-3xl text-lime-500 py-3'>SKILLS</h2>
-      </div>
+      <StarsBackground /*client: visible*/ />
       <div className='relative h-screen'>
+        <Caption id='adout-caption'>Skills</Caption>
         <div className='grid grid-cols-6 text-center'>
           {skills.map((skill, index) => (
             <div key={index} className='max-w-75 max-h-75'>
