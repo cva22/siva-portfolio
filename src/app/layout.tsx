@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: ReactChildren) {
   return (
-    <html lang='en'>
+    <html lang='en' class='scroll-smooth'>
       <body className="scrollbar-thin bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50">
         <GoogleAnalytics />
         <main>
