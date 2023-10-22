@@ -26,17 +26,10 @@ export default function About() {
             headings={headings}
           />
           <Paragraph className='text-lg'>
-            I&apos;m a software developer specialized in quantified-self, tech innovation, and sustainable design.
-            <br />
-            I build tailored frameworks to meet business needs and thrive both solo and in teams.
-            <br />
-            Always eager to innovate and learn from every experience.
-            <br />
-            <br />
-            I excel in stakeholder management, skillfully aligning projects with organizational objectives. My career traverses
-            both enterprise and startup landscapes, providing me with a distinctive perspective on fostering innovation. I
-            embrace challenges with curiosity and a positive outlook, consistently pursuing innovative solutions that deliver
-            concrete results.
+            Seasoned DevOps developer, experienced in both enterprise and startup environments, specializing in AWS and Azure cloud infrastructures.
+            Passionate about meticulous UI/UX design and prototyping, ensuring seamless and memorable user interactions.
+            Proven expertise in stakeholder management, adeptly aligning projects with overarching organizational goals.
+            Beyond development, I stand as a visionary architect of transformative digital experiences, always driving innovation with a positive approach.
           </Paragraph>
         </div>
       </div>

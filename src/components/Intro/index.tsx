@@ -3,7 +3,7 @@ import React from 'react';
 export default function Intro() {
   return (
     <section
-      className='relative z-10 w-full bg-neutrals-900 py-32 flex flex-col items-center justify-center min-h-screen'
+      className='relative z-10 w-full bg-gradient-to-br from-neutrals-900 to-neutrals-800/70 overflow-hidden rounded-lg py-32 flex flex-col items-center justify-center min-h-screen'
     >
       <div className='text-xl p-20'>Hello, I&apos;m</div>
       <div className='text-6xl tracking-wider text-lime-500 hover:text-purple-500 capitalize p-20'>
