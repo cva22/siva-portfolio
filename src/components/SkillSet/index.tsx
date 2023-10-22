@@ -6,10 +6,16 @@ import abc from '../../assets/gitHub.svg'
 const skills = [
   { category: 'programming language & framework', name: 'typescript', alt: 'typescript', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
   { category: 'programming language & framework', name: 'javascript', alt: 'javascript', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+  { category: 'programming language & framework', name: 'react', alt: 'react', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg' },
+  { category: 'programming language & framework', name: 'nest', alt: 'nest', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg' },
+  { category: 'programming language & framework', name: 'next', alt: 'next', src: 'https://raw.githubusercontent.com/ithivesolutions/siva-portfolio/main/src/assets/skills/next.svg' },
+  { category: 'tools', name: 'npm', alt: 'npm', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
   { category: 'programming language & framework', name: 'nodejs', alt: 'nodejs', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain.svg' },
   { category: 'programming language & framework', name: 'expressjs', alt: 'expressjs', src: 'https://raw.githubusercontent.com/ithivesolutions/siva-portfolio/main/src/assets/skills/express.svg' },
-  { category: 'database', name: 'postgress', alt: 'postgress', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg' },
+  { category: 'infrastructure', name: 'aws', alt: 'aws', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg' },
+  { category: 'infrastructure', name: 'azure', alt: 'azure', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' },
   { category: 'infrastructure', name: 'firebase', alt: 'firebase', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain-wordmark.svg' },
+  { category: 'database', name: 'postgress', alt: 'postgress', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg' },
   { category: 'tools', name: 'bitbucket', alt: 'bitbucket', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original-wordmark.svg' },
   { category: 'programming language & framework', name: 'bootstrap', alt: 'bootstrap', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg' },
   { category: 'tools', name: 'confluence', alt: 'confluence', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/confluence/confluence-original-wordmark.svg' },
@@ -29,13 +35,13 @@ const skills = [
   { category: 'programming language & framework', name: 'material-ui', alt: 'material-ui', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg' },
   { category: 'database', name: 'mongodb', alt: 'mongodb', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg' },
   { category: 'database', name: 'sql', alt: 'sql', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg' },
-  { category: 'programming language & framework', name: 'nest', alt: 'nest', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg' },
-  { category: 'programming language & framework', name: 'next', alt: 'next', src: 'https://raw.githubusercontent.com/ithivesolutions/siva-portfolio/main/src/assets/skills/next.svg' },
-  { category: 'tools', name: 'npm', alt: 'npm', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg' },
-  { category: 'programming language & framework', name: 'react', alt: 'react', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg' },
   { category: 'tools', name: 'redis', alt: 'redis', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-plain-wordmark.svg' },
   { category: 'programming language & framework', name: 'tailwindcss', alt: 'tailwindcss', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg' },
   { category: 'infrastructure', name: 'terraform', alt: 'terraform', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg' },
+  { category: 'database', name: 'dynamodb', alt: 'dynamodb', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg' },
+  { category: 'design', name: 'photoshop', alt: 'photoshop', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-line.svg' },
+
+
 ] as const;
 
 type Skill = {

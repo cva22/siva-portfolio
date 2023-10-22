@@ -1,7 +1,7 @@
 import { useReducedMotion } from 'framer-motion';
 import { useCallback, useEffect, useRef, type ElementRef } from 'react';
 
-const TEXT_COLOR = '#6919FF';
+const TEXT_COLOR = '#66ff19';
 const BACKGROUND_COLOR = '#060918';
 const ALPHA_BACKGROUND_COLOR = '#06091818';
 const FONT = '15pt monospace';
