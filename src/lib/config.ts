@@ -1,6 +1,6 @@
 const config = {
-    siteName: 'Siva Portfolio',
-    siteDescription: 'A simple sample portfolio application developed using Nextjs',
+    siteName: 'Siva Selvaraj',
+    siteDescription: 'Portfolio Web application',
     author: 'Siva',
     nav: [{
         name: 'Home',
