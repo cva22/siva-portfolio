@@ -1,7 +1,7 @@
 import config from '@/lib/config';
 import { ReactChildren } from '@/lib/types';
 import { Providers } from './providers';
-import './globals.css';
+import '@/styles/globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: ReactChildren) {
   return (
     <html lang='en'>
-      <body>
+      <body className="scrollbar-thin bg-neutrals-900 text-neutrals-50 antialiased selection:bg-primary selection:text-neutrals-50">
         <GoogleAnalytics />
         <main>
           <Providers>

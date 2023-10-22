@@ -73,7 +73,7 @@
 
 import Image from 'next/image';
 import { Caption } from '../ui/typography';
-import StarsBackground from '@/components/stars-background';
+import MatrixBackground from '@/components/matrix-background';
 
 
 
@@ -113,29 +113,34 @@ export default function SkillSet() {
     { name: 'terraform', alt: 'terraform', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg' },
   ] as const;
 
+
   return (
     <section
       id="skills"
       className='relative z-10 w-full bg-neutrals-900 py-32 flex flex-col justify-center min-h-screen'
     >
-      <StarsBackground /*client: visible*/ />
-      <div className='relative h-screen'>
-        <Caption id='adout-caption'>Skills</Caption>
-        <div className='grid grid-cols-6 text-center'>
-          {skills.map((skill, index) => (
-            <div key={index} className='max-w-75 max-h-75'>
-              < Image
-                className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
-                src={skill.src}
-                alt={skill.alt}
-                width={120}
-                height={120}
-                priority
-              />
-            </div>
-          ))}
-        </div>
-      </div >
+      <MatrixBackground /*client: visible*/ />
+      <div
+      // className="flex min-h-screen w-full items-center max-lg:flex-col lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,min(91.666667%/2,40rem))_minmax(0,min(91.666667%/2,40rem))_minmax(0,1fr)] xl:grid-cols-[minmax(0,1fr)_minmax(0,min(80%/2,40rem))_minmax(0,min(80%/2,40rem))_minmax(0,1fr)]"
+      >
+        <div className="w-full py-28 max-lg:mx-auto max-lg:w-11/12 max-lg:max-w-7xl lg:pl-10 xl:pl-20">
+          <Caption id='adout-caption'>Skills</Caption>
+          <div className='grid grid-cols-6 text-center'>
+            {skills.map((skill, index) => (
+              <div key={index} className='max-w-75 max-h-75'>
+                < Image
+                  className='group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30'
+                  src={skill.src}
+                  alt={skill.alt}
+                  width={120}
+                  height={120}
+                  priority
+                />
+              </div>
+            ))}
+          </div>
+        </div >
+      </div>
     </section>
   );
 }

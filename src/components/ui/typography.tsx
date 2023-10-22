@@ -20,4 +20,19 @@ function Caption({ children, className, ...props }: CaptionProps) {
     )
 }
 
-export { Caption };
+interface ParagraphProps extends HTMLAttributes<ElementRef<'p'>> {
+    children: ReactNode;
+}
+
+function Paragraph({ children, className, ...props }: ParagraphProps) {
+    return (
+        <p
+            className={cn('leading-relaxed text-neutrals-200', className)}
+            {...props}
+        >
+            {children}
+        </p>
+    );
+}
+
+export { Caption, Paragraph };
