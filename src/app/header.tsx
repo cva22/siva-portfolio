@@ -78,8 +78,8 @@ function Header() {
                                             title="Navigate home"
                                         >
                                             <Image
-                                                src='/s.png'
-                                                alt='ITH Logo'
+                                                src='/favicon.ico'
+                                                alt='Siva'
                                                 width={80}
                                                 height={80}
                                             />
