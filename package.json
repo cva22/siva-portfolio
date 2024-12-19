@@ -16,7 +16,7 @@
     "@tailwindcss/typography": "^0.5.10",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.4",
-    "next": "latest",
+    "next": "^14.2.20",
     "react": "latest",
     "react-dom": "latest",
     "react-ga": "^3.3.1",
