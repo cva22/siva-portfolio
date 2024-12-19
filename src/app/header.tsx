@@ -78,10 +78,10 @@ function Header() {
                                             title="Navigate home"
                                         >
                                             <Image
-                                                src='/favicon.ico'
-                                                alt='Siva'
-                                                width={40}
-                                                height={40}
+                                                src='/SS.png'
+                                                alt='SS'
+                                                width={50}
+                                                height={20}
                                             />
                                         </a>
                                     </div>
