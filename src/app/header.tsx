@@ -78,8 +78,8 @@ function Header() {
                                             title="Navigate home"
                                         >
                                             <Image
-                                                src='/siva.png'
-                                                alt='Siva'
+                                                src='/SS.png'
+                                                alt='SS'
                                                 width={50}
                                                 height={20}
                                             />

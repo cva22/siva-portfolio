@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+    <!-- First S - Moved up by adjusting coordinates -->
+    <path d="M60,10 C40,10 30,20 30,30 C30,45 45,50 60,50 C75,50 90,55 90,70 C90,80 80,90 60,90 C40,90 30,80 30,70"
+          stroke="#A855F7"
+          fill="none"
+          stroke-width="8"
+          stroke-linecap="round"/>
+
+    <!-- Second S - Moved up by adjusting coordinates -->
+    <path d="M140,10 C120,10 110,20 110,30 C110,45 125,50 140,50 C155,50 170,55 170,70 C170,80 160,90 140,90 C120,90 110,80 110,70"
+          stroke="#84CC16"
+          fill="none"
+          stroke-width="8"
+          stroke-linecap="round"/>
+
+    <!-- Connecting line - Moved up -->
+    <path d="M75,40 L125,40"
+          stroke="#A855F7"
+          stroke-width="4"
+          stroke-dasharray="4,4"/>
+
+    <!-- Decorative dots - Moved up -->
+    <circle cx="60" cy="20" r="3" fill="#84CC16"/>
+    <circle cx="140" cy="20" r="3" fill="#A855F7"/>
+    <circle cx="60" cy="80" r="3" fill="#84CC16"/>
+    <circle cx="140" cy="80" r="3" fill="#A855F7"/>
+</svg>
