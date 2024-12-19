@@ -8,8 +8,8 @@ import About from '@/components/About';
 import SkillSet from '@/components/SkillSet';
 // import Experience from '@/components/Experience';
 // import HyperLinks from '@/components/HyperLinks';
-import Work from '@/components/Work'
-import Footer from '@/components/Footer';
+// import Work from '@/components/Work'
+// import Footer from '@/components/Footer';
 import ScrollContext from './contexts/ScrollContext';
 
 export default function Home() {
