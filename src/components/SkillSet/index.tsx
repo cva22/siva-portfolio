@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Caption } from '../ui/typography';
 import MatrixBackground from '@/components/matrix-background';
-import abc from '../../assets/gitHub.svg'
 
 const skills = [
   { category: 'programming language & framework', name: 'typescript', alt: 'typescript', src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },

@@ -8,6 +8,7 @@ import { Inter } from 'next/font/google';
 import GoogleAnalytics from './GoogleAnalytics';
 import React from 'react';
 
+// eslint-disable-next-line no-unused-vars
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useContext, useRef } from 'react';
+import React, { useRef } from 'react';
 
 import Header from '@/app/header';
 import Intro from '@/components/Intro';
