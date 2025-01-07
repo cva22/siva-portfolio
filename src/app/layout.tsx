@@ -3,12 +3,11 @@ import { ReactChildren } from '@/lib/types';
 import { Providers } from './providers';
 import '@/styles/globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 
 import GoogleAnalytics from './GoogleAnalytics';
 import React from 'react';
 
-const inter = Inter({ subsets: ['latin'] });
+// eslint-disable-next-line no-unused-vars
 
 export const metadata: Metadata = {
   title: config.siteName,
